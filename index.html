@@ -4,22 +4,49 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>sockettime</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-		<link rel="stylesheet" href="mystylecss.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
+	<style>
+		.refs {
+			vertical-align: super;
+  			font-size: smaller;
+		}
+	</style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section><div class=class1>~~wstep~~</div></section>
-				<section>Tresc tresc tresc</section>
-				<section>Slide 3</section>
+				<section>
+					<h2>Network Sockets</h2>
+				</section>
+				<section>
+					<h3>The three main types:</h3>
+					<p>(Use arrows to navigate)</p>
+					<section>1. Datagram</section>
+					<section>2. Stream</section>
+					<section>3. Raw</section>
+				</section>
+				<section>
+					<h3>Datagram Sockets:</h3>
+					<p>- Connectionless</p>
+					<p>- Use UDP</p>
+				</section>
+				<section>
+					<h3>Stream Sockets</h3>
+					<p>- Connection-oriented</p>
+					<p>- Use TCP (or SCTP, DCCP)</p>
+				</section>
+				<section>
+					<h3>Raw Sockets</h3>
+					<p>Allow direct sending and receiving of IP packets without any protocol-specific transport layer formatting.<sup class="refs">1</sup></p>
+					<p>1) Source:   <a href="https://pl.wikipedia.org/wiki/Network_socket">Wikipedia</a></p>
+				</section>
 			</div>
 		</div>
 
